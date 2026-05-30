@@ -1,0 +1,30 @@
+<html>
+    <head>
+    <title>dom manupulition</title>
+    <style>
+        .alert{
+            color: rgb(255, 135, 199);
+            background-color: mistyrose;
+            padding: 5px;
+        }
+    </style>
+    </head>
+    <body>
+        <h1 id="heading">Welcome</h1>
+        <p>Hello</p>
+        <p>How are you?</p>
+        <script>
+            let div= document.createElement("div");
+            div.id="paragragh";
+            div.className="alert";
+            div.innerHTML="<p>Congratulations you have created a div </p>";
+            document.body.append(div);
+
+            document.querySelector('p').innerHTML = "<strong>Good Job!</strong>"; 
+            
+                let heading = document.getElementById("heading");
+
+                heading.innerHTML = "😀";
+        </script>
+    </body>
+</html>
